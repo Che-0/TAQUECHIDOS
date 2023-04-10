@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Document000 </title>
+
+    <style>
+        table, th, td {
+            border: 1px solid black;
+        }
+    </style>
+
+</head>
+
+<body>
+
+
+    <table style="width: 500px;">
+        
+        <thead>  <!-- Esrta madre es para agrupar etiquetas de columna-->
+        
+            <tr>
+                <th>Producto</th>  <!-- Columnas -->
+                <th>Precio</th>
+                <th>Precio2</th>
+            </tr>    
+            
+        </thead>
+        
+        <tbody> <!--- Esta madre es para agrupar etiquetas de filas-->
+
+            <tr>
+                <td>Huevos</td>    <!-- Filas -->
+                <td>Melon</td>
+                <td>Melon2</td>
+            </tr>
+    
+            <!-- Para agregar nuevos elementos a las columnas correspondientes
+            se tiene que volver a abrir un etiqueta tr-->
+    
+            <tr>
+                <td>pAN</td>    <!-- Filas -->
+                <td>Poiu</td>
+                <td>Filete</td>
+            </tr>    
+
+        </tbody>
+
+        <tfoot>
+            <td></td>
+            <td>Total: 48 </td>
+        </tfoot>
+        
+    </table>
+    
+    <!-- ul es una lista no ordenada  -->
+    <ul>   
+        <li>Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+        <li>Elemento 4</li>
+    </ul>
+
+    <!-- ol es una lista ordenada  -->
+    <ol>   
+        <li>Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+        <li>Elemento 4</li>
+
+        <ol>
+            <li style="list-style-type: lower-alpha;">sub Elemento</li>
+            <li style="list-style-type: lower-alpha;">sub Elemento</li>
+            <li style="list-style-type: lower-alpha;">sub Elemento</li>
+        </ol>
+    </ol>
+
+
+    <form action="formulario"> 
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Nombre"/>
+        <!-- submit hace que sea boton, type biene eb text por defecto-->
+        <!-- tambien existe el de email, password , radio(circulo para rellenat) y checkbox
+        file-->
+        <br>
+        <label for="Apellido">Apellido </label>
+        <input type="text" id="apellido" name="Apellido" placeholder="Apellido"/><br/>
+        <br>
+        <textarea cols="15" rows="10" id="comentario" placeholder="comentario" name="comentario">  </textarea>
+        <br>
+        <button type="">Enviar</button>
+        
+        
+
+    </form>
+
+    <h1>
+        Titulo de mierda
+    </h1>
+    
+    <p>
+        Este es un texto<br/>
+        de lo que quiero
+    </p>
+
+    <hr>
+
+</body>
+</html>
